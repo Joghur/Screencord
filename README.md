@@ -10,10 +10,13 @@ At the moment all works and the .deb file produced can be installed and runs on 
 
 **To do**  
 
+ * Removing all security warnings  
+ * Stop seeing Dev Tools in Chromium when starting  
  * What works when developing doesn't work using app. On linux-app this javascript function doesn't work as intended (render.js, line 34):
  `const inputSources = await desktopCapturer.getSources({
     types: ['window', 'screen']
   });`  
+ 
   
 
 
