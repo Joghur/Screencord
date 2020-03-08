@@ -1,8 +1,8 @@
 {
   "name": "screencord",
   "productName": "screencord",
-  "version": "1.0.0",
-  "description": "My Electron application description",
+  "version": "1.0.1",
+  "description": "Record screen operations",
   "main": "src/index.js",
   "scripts": {
     "start": "electron-forge start",
@@ -36,16 +36,14 @@
         {
           "name": "@electron-forge/maker-deb",
           "config": {}
-        },
-        {
-          "name": "@electron-forge/maker-rpm",
-          "config": {}
         }
       ]
     }
   },
   "dependencies": {
-    "electron-squirrel-startup": "^1.0.0"
+    "electron-forge": "^5.2.4",
+    "electron-squirrel-startup": "^1.0.0",
+    "electron-compile": "6.4.4"
   },
   "devDependencies": {
     "@electron-forge/cli": "^6.0.0-beta.50",
@@ -53,6 +51,7 @@
     "@electron-forge/maker-rpm": "^6.0.0-beta.50",
     "@electron-forge/maker-squirrel": "^6.0.0-beta.50",
     "@electron-forge/maker-zip": "^6.0.0-beta.50",
-    "electron": "8.1.0"
+    "electron": "8.1.0",
+    "electron-prebuilt-compile": "4.0.0"
   }
 }
